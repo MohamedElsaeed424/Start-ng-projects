@@ -1,0 +1,11 @@
+
+<h2>Test here</h2>
+<button (click)="onDisplay()">Display</button>
+<p *ngIf="displayStatus === 'on'" [ngStyle]="{'font-style' : 'italic'}">Hello baby</p>
+
+<hr>
+
+<p *ngFor="let log of logs ; let i = index"
+     [ngStyle]="{backgroundColor : i > 4 ?'blue': 'transparent'}" 
+     [ngClass]="{log : i > 4  }">{{log}}</p>
+
